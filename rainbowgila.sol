@@ -19,7 +19,6 @@ contract RainbowNFT is ERC721URIStorage {
   function mint() public {
     uint256 newItemId = _tokenIds.current();
     _safeMint(msg.sender, newItemId);
-    // console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
     _setTokenURI(newItemId, "ipfs://QmYjYdJTjKSxBCpMnBs4dRJZGGGrTZYfmmiQoiuV47vsNC");
     _tokenIds.increment();
   }
