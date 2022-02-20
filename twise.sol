@@ -11,7 +11,7 @@ contract RainbowNFT is ERC721URIStorage {
   Counters.Counter private _tokenIds;
 
   // Bikin Nama Contract
-  constructor() ERC721 ("Rainbow Gila", "RBG") {
+  constructor() ERC721 ("Twise", "TWISE") {
     // console.log("RainbowNFT!");
   }
 
