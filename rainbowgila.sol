@@ -10,10 +10,12 @@ contract RainbowNFT is ERC721URIStorage {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIds;
 
-  constructor() ERC721 ("Twiceku", "TWICEKU") {
+  // Bikin Nama Contract
+  constructor() ERC721 ("Rainbow Gila", "RBG") {
     // console.log("RainbowNFT!");
   }
 
+  // minting nft menggunakan url ipfs
   function mint() public {
     uint256 newItemId = _tokenIds.current();
     _safeMint(msg.sender, newItemId);
